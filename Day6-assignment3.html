@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using flex-box</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            min-height: 50vh ;
+            border: 1px solid black;
+            
+        }
+        header{
+            background-color: yellow;
+            color: brown;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+            border: 1px solid black;
+        }
+        nav{
+            background-color: green;
+            color: brown;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+            border: 1px solid black;
+            
+        }
+
+        .group {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        main{
+            flex: 1;
+            display: flex;
+            flex-grow: 2;
+            margin-left:10px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+        }
+
+        section{
+            flex:1;
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        section>header{
+            flex: 1;
+            background-color: gray;
+            padding: 10px;
+            margin:10px;
+            border: 1px solid black;
+        }
+        article{
+            flex:1;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+
+           
+        }
+
+        aside{
+            flex: 1;
+            display: flex;
+            flex-grow:1;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background-color: gray;
+            border: 1px solid black;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+        }
+        aside>header{
+            flex:1;
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px;
+            height:30px;
+            border: 1px solid black;
+        }
+
+        footer{
+            background-color: blue;
+            color: fff;
+            padding: 10px;
+            border: 1px solid black;
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:10px;
+            margin-bottom: 10px;
+
+           
+        }
+    </style>
+</head>
+<body>
+    <header > I'm Header</header>
+    <nav>I'm nav</nav>
+    <div class="group">
+    <main>
+        <section>
+            <header>I'm a header inside section</header>
+            <article>Article 1</article>
+            <article>Article 2</article>
+            <article >Article 3</article>
+        </section>
+    </main>
+    <aside> ASIDE
+        <header>I'm a header inside aside</header>
+    </aside>
+   </div>
+    <footer>footer </footer>
+</body>
+</html>
